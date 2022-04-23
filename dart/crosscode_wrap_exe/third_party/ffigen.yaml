@@ -1,0 +1,49 @@
+name: AutoConvertByffigen
+description: Convert Header file of C to dart file of Dart by ffigen package
+output: 'lib/crosscode_by_auto.dart'
+headers:
+  entry-points:   
+   - 'third_party/crosscode_c_func.h'   
+  # 只轉換下列的header文件而其內所引用的相關header文件將不會被轉換
+  include-directives:  
+   - '**crosscode_defstruct.h'
+   - '**crosscode_c_func.h'
+
+structs:
+  include:
+    - '.*' 
+  exclude:
+    - '_ExcludeUnrestrictedAlignmentStruct'  
+  # 移除起始"_"符號並加入FFI字串
+  rename:
+    '_(.*)': 'FFI$1'
+
+# 此選項中只有被引用的typedef才會進行轉換
+typedefs:
+  # 若要直接引用其原始定義而不要建立其對應的定義
+  exclude:
+    - 'CallbackFunc2'
+    - 'UChar'
+  # 將轉換後的定義變數名稱加入ForFFI字串
+  rename: 
+    '(.*)': '$1'
+
+functions: 
+  include:
+    - '.*'
+  # 指定排除轉換的函式
+  exclude:
+    - 'ExcludeFunction' 
+  
+# 指定型別對應至NativeType型別
+typedef-map:
+  'TCHAR': 'Int16' 
+
+comments:
+  style: any
+  length: full
+
+preamble:
+  /* ************** Cross Code Co.Ltd ********************
+    how to auto convert from C to dart by ffigen packages       
+    ***************************************************** */
