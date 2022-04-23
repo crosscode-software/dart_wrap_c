@@ -29,9 +29,9 @@ you can refer to my blog if you want to get more explanation.
 [Vocus] (https://vocus.cc/@cross-code/61ee44dffd897800014cabb1)
 
 
-[C code example]: https://github.com/crosscode-software/dart/crosscode_wrap_exe/
+[C code example]: https://github.com/crosscode-software/dart_wrap_c/tree/main/visual_studio  
 
-[Dart code example]: https://github.com/crosscode-software/visual_studio/
+[Dart code example]: https://github.com/crosscode-software/dart_wrap_c/tree/main/dart/crosscode_wrap_exe
 
 [Import DLL By C exe]: /visual_studio/.github/full_result_msvc.png
 [Import DLL By Dart exe]: /dart/crosscode_wrap_exe/.github/full_result_dart.png
