@@ -28,6 +28,9 @@ you can refer to my blog if you want to get more explanation.
  
 [Vocus] (https://vocus.cc/@cross-code/61ee44dffd897800014cabb1)
 
+[Blogger] (https://cross-code.blogspot.com/2022/04/dart-c-windows.html)
+
+[Pixnet] (https://crosscode.pixnet.net/blog/post/61753024)
 
 [C code example]: https://github.com/crosscode-software/dart_wrap_c/tree/main/visual_studio  
 

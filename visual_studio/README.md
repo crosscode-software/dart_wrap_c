@@ -8,7 +8,7 @@
 
 you can refer to my blog if you want to get more explanation.
  
-[BLOG] (https://vocus.cc/@cross-code/6208c119fd8978000153b0fe)
+[Vocus] (https://vocus.cc/@cross-code/6208c119fd8978000153b0fe)
 
 
 [RunResult]: /visual_studio/.github/full_result_msvc.png
